@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+	background: black;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li {
+  display: inline;
+  padding: 15px;
+}
+
+
+header nav {
+  display: flex;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* image credit to:
+  http://4.bp.blogspot.com/-9esBy0CVRW0/TWFbmDUQgQI/AAAAAAAAAEw/5IiZClKM5hE/s1600/seamless-vintage-wallpaper-2.jpg
+  */
+  background-image: url(img/planet.jpg);
+  background-size: cover;
+}
+
+body .main-contents {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.main-contents h1 {
+  font-family: 'Tillana', cursive;
+  color: white;
+  margin: 20px;
+  font-size: 60px;
+  font-weight: bolder;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.main-subtitle p {
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.create-team-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+
+}
+.input-area {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:10px;
+	width:100%;
+}
+.email-field {
+	width:40%;
+	padding:10px;
+
+}
+.email-field input {
+	height:50px;
+	width:100%;
+	border-radius:10px;
+	font-size:25px;
+}
+.email-button {
+	height:50px;
+	width:30%;
+}
+
+.email-button button {
+	/* The following code was adapted from:
+	 * it styles a button */
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.bottom-contents {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	background: black;
+}
+.columns-container {
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+	width:70%;
+}
+.columns-container ul {
+	padding: 0px;
+}
+p {
+  font-family: 'Amiko', sans-serif;
+  color: white;
+}
+
+a {
+  font-family: 'Anonymous Pro', monospace;
+  color: white;
+}
+
+ul {
+	/* The following code was provided by Tim Tregubov on the assignment page
+	 * it makes lists not have bullet points */
+	list-style-type: none;
+}
