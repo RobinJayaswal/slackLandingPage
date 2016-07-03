@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
 	background: black;
+  overflow: scroll;
 }
 
 header {
@@ -13,22 +14,53 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  height: 10%;
+  position: relative;
+  z-index: 11;
+}
+.title-container {
+  flex: 0;
+}
+.title-container a {
+  font-family: 'Baloo Da';
+  font-size: 30px;
+  padding: 10px;
+  margin-right: 15px;
 }
 
 header li {
   display: inline;
-  padding: 15px;
+  border-radius: 4px;
 }
 
+header li a {
+  font-family: 'Baloo Da';
+  padding: 15px;
+  border-radius: 4px;
+}
+
+header li a:hover {
+  color: LightGrey;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+header .circled-link {
+  border-style: solid;
+  border-radius: 4px;
+  border-color: white;
+  margin-right: 15px;
+}
+
+header .menu {
+  display: none;
+}
 
 header nav {
   display: flex;
 }
 
 .cover {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   /* image credit to:
   http://4.bp.blogspot.com/-9esBy0CVRW0/TWFbmDUQgQI/AAAAAAAAAEw/5IiZClKM5hE/s1600/seamless-vintage-wallpaper-2.jpg
@@ -37,16 +69,21 @@ header nav {
   background-size: cover;
 }
 
+
 body .main-contents {
-  height: 50%;
+  min-height: 85%;
   display: flex;
+  position: relative;
+  z-index: 10;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .main-contents h1 {
-  font-family: 'Tillana', cursive;
+  font-family: 'Baloo Da', cursive;
+  font-weight: lighter;
   color: white;
   margin: 20px;
   font-size: 60px;
@@ -54,6 +91,11 @@ body .main-contents {
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.main-subtitle {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .main-subtitle p {
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -64,8 +106,40 @@ body .main-contents {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
-
+  width: 50%;
+  text-align: center;
+  flex-shrink: 0;
 }
+
+.create-team-box p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.create-team-box a {
+  text-decoration: underline;
+}
+
+.location-box {
+  padding: 15px;
+  color: white;
+  text-align: left;
+  align-self: flex-end;
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+.location-text {
+  font-weight: bolder;
+}
+
+.location-box p {
+  margin: 3px;
+}
+
 .input-area {
 	display:flex;
 	flex-direction:row;
@@ -82,27 +156,36 @@ body .main-contents {
 .email-field input {
 	height:50px;
 	width:100%;
-	border-radius:10px;
+	border-radius:4px;
 	font-size:25px;
+  border: none;
+
 }
+
 .email-button {
-	height:50px;
-	width:30%;
+  width: 90%;
 }
 
 .email-button button {
-	/* The following code was adapted from:
+	/* The following code was adapted from:http://www.w3schools.com/css/css3_buttons.asp
 	 * it styles a button */
-	background-color: #4CAF50; /* Green */
+	background-color: #CCFFFF;
 	border: none;
-	color: white;
+	color: grey;
+  border-radius: 4px;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
 	margin: 4px 2px;
-	cursor: pointer;
+  width: 100%;
+}
+
+.email-button button:hover {
+  background-color: #ACD1E9;
+  color: white;
+  cursor: pointer;
 }
 
 .bottom-contents {
@@ -110,33 +193,170 @@ body .main-contents {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
+  position: relative;
+  z-index: 5;
+	padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 20px;
 	width: 100%;
 	box-sizing: border-box;
-	background: black;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-top-color: rgba(255, 255, 255, 0.5);
 }
 .columns-container {
 	display:flex;
 	flex-direction:row;
 	align-items:center;
 	justify-content:space-between;
-	width:70%;
+	width:100%;
+  top: 20px;
+  position: relative;
 }
 .columns-container ul {
 	padding: 0px;
 }
+
+.bottom-contents p {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Baloo Da';
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+.bottom-contents a {
+  font-size: 14px;
+  font-family: 'Baloo Da';
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom-column a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.rows-container {
+  display: none;
+  width: 100%;
+}
+
+.bottom-row {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 255, 255, .4);
+  border-bottom-width: thin;
+  color: white;
+  padding: 10px;
+
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #1a1a1a;
+}
+
+
+footer li {
+  display: inline;
+  padding-left: 30px;
+
+}
+
 p {
   font-family: 'Amiko', sans-serif;
   color: white;
 }
 
 a {
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Amiko', sans-serif;
   color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 ul {
 	/* The following code was provided by Tim Tregubov on the assignment page
 	 * it makes lists not have bullet points */
 	list-style-type: none;
+}
+
+/* The following code to place a gradient over the background image is from slack.com */
+.gradient {
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 100%);
+  height: 660px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 640px) {
+  header .desktop-nav-bar {
+    display: none;
+  }
+  header .menu {
+    display: block;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: white;
+    margin-right: 15px;
+    font-family: 'Baloo Da';
+    padding: 15px;
+  }
+
+  header .menu:hover {
+    color: LightGrey;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .create-team-box {
+    width: 95%;
+  }
+  .email-field {
+    width: 90%;
+  }
+  .input-area {
+    flex-direction: column;
+  }
+
+  .location-box {
+    display: none;
+  }
+
+  .bottom-contents {
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .columns-container {
+    display: none;
+  }
+
+  .rows-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-row p {
+    font-size: 12px;
+  }
+
+
 }
