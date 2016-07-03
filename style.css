@@ -149,7 +149,7 @@ body .main-contents {
 	width:100%;
 }
 .email-field {
-	width:40%;
+	flex: 3;
 	padding:10px;
 
 }
@@ -157,13 +157,14 @@ body .main-contents {
 	height:50px;
 	width:100%;
 	border-radius:4px;
-	font-size:25px;
+	font-size:18px;
   border: none;
+  padding: 0px;
 
 }
 
 .email-button {
-  width: 90%;
+  flex: 2;
 }
 
 .email-button button {
@@ -177,9 +178,11 @@ body .main-contents {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
+  height: 50px;
 	font-size: 16px;
 	margin: 4px 2px;
   width: 100%;
+  overflow: hidden;
 }
 
 .email-button button:hover {
@@ -329,12 +332,18 @@ ul {
   .create-team-box {
     width: 95%;
   }
-  .email-field {
-    width: 90%;
-  }
+
   .input-area {
     flex-direction: column;
+    width: 90%
   }
+  .email-field {
+    width: 100%;
+  }
+  .email-button {
+    width: 100%;
+  }
+
 
   .location-box {
     display: none;
