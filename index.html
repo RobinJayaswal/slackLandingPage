@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-
   <title>Slackluster Page</title>
   <link href="style.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Amiko|Anonymous+Pro|Black+Ops+One|Tillana" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amiko|Anonymous+Pro|Black+Ops+One|Tillana|Baloo+Da" rel="stylesheet">
   <link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.min.css">
 </head>
 
@@ -24,10 +21,11 @@
           <li><a href="#" class="circled-link sign-in">Sign In</a></li>
         </ul>
       </nav>
-      <!-- <a href="#" class="circled-link menu" for="toggle-1">Menu</a> -->
 
+      <!-- The following two lines that implement checkbox hack
+      are adapted from: https://css-tricks.com/the-checkbox-hack/-->
       <label for="toggle-1" class="circled-link menu">Menu</label>
-      <input type="checkbox" id="toggle-1">
+      <input type="checkbox" id="toggle-1" class="check-menu">
       <div class="menu-overlay">
         <div class="top-bar">
           <div class="title-container">
@@ -41,9 +39,7 @@
           <li><a href="#">Support</a></li>
           <li><a href="#">Sign In</a></li>
         </ul>
-
       </div>
-
     </header>
 
     <div class="main-contents">
@@ -70,7 +66,6 @@
         <p class="location-text"><span class="fa fa-location-arrow"></span>   Space </p>
       </div>
     </div>
-
 
     <div class="bottom-contents">
   		<div class="columns-container">
@@ -112,21 +107,66 @@
   			</div>
   		</div>
       <div class="rows-container">
-        <div class="bottom-row">
-          <p>Link Heading</p>
-          <p>+</p>
+        <div class="bottom-row one">
+
+          <!-- The following two lines that implement checkbox hack
+          are adapted from: https://css-tricks.com/the-checkbox-hack/-->
+          <label for="link-t-1">Link Heading</label>
+          <label for="link-t-1">+</label>
+          <input type="checkbox" id="link-t-1" class="check-link-1">
+          <div class="link-overlay-1">
+            <ul>
+              <li><a href="#">link 1</a></li>
+    					<li><a href="#">link 2</a></li>
+    					<li><a href="#">link 3</a></li>
+    					<li><a href="#">link 4</a></li>
+            </ul>
+          </div>
         </div>
         <div class="bottom-row">
-          <p>Link Heading</p>
-          <p>+</p>
+          <!-- The following two lines that implement checkbox hack
+          are adapted from: https://css-tricks.com/the-checkbox-hack/-->
+          <label for="link-t-2">Link Heading</label>
+          <label for="link-t-2">+</label>
+          <input type="checkbox" id="link-t-2" class="check-link-2">
+          <div class="link-overlay-2">
+            <ul>
+              <li><a href="#">link 1</a></li>
+    					<li><a href="#">link 2</a></li>
+    					<li><a href="#">link 3</a></li>
+    					<li><a href="#">link 4</a></li>
+            </ul>
+          </div>
         </div>
         <div class="bottom-row">
-          <p>Link Heading</p>
-          <p>+</p>
+          <!-- The following two lines that implement checkbox hack
+          are adapted from: https://css-tricks.com/the-checkbox-hack/-->
+          <label for="link-t-3">Link Heading</label>
+          <label for="link-t-3">+</label>
+          <input type="checkbox" id="link-t-3" class="check-link-3">
+          <div class="link-overlay-3">
+            <ul>
+              <li><a href="#">link 1</a></li>
+    					<li><a href="#">link 2</a></li>
+    					<li><a href="#">link 3</a></li>
+    					<li><a href="#">link 4</a></li>
+            </ul>
+          </div>
         </div>
         <div class="bottom-row">
-          <p>Link Heading</p>
-          <p>+</p>
+          <!-- The following two lines that implement checkbox hack
+          are adapted from: https://css-tricks.com/the-checkbox-hack/-->
+          <label for="link-t-4">Link Heading</label>
+          <label for="link-t-4">+</label>
+          <input type="checkbox" id="link-t-4" class="check-link-4">
+          <div class="link-overlay-4">
+            <ul>
+              <li><a href="#">link 1</a></li>
+    					<li><a href="#">link 2</a></li>
+    					<li><a href="#">link 3</a></li>
+    					<li><a href="#">link 4</a></li>
+            </ul>
+          </div>
         </div>
       </div>
   	</div>
@@ -140,13 +180,12 @@
       <nav>
         <ul>
           <li><a href="#">Contact</a></li>
+          <!-- icons courtesy of fontawesome.io-->
           <li><a href="#"><span class="fa fa-twitter-square"></span></a></li>
           <li><a href="#"><span class="fa fa-facebook-official" ></span></a></li>
-
         </ul>
       </nav>
   	</footer>
   </div>
-
 </body>
 </html>

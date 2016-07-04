@@ -47,7 +47,6 @@ header li a {
   border-radius: 4px;
 }
 
-
 header li a:hover {
   color: LightGrey;
   background-color: rgba(0, 0, 0, 0.2);
@@ -64,7 +63,6 @@ header .circled-link {
 header .menu {
   display: none;
 }
-
 
 header nav {
   display: flex;
@@ -106,9 +104,11 @@ body .main-contents {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 .main-subtitle p {
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .create-team-box {
   padding: 10px;
   display: flex;
@@ -158,11 +158,13 @@ body .main-contents {
 	margin-bottom:10px;
 	width:100%;
 }
+
 .email-field {
 	flex: 3;
 	padding:10px;
 
 }
+
 .email-field input {
 	height:50px;
 	width:100%;
@@ -217,6 +219,7 @@ body .main-contents {
   border-top-width: thin;
   border-top-color: rgba(255, 255, 255, 0.5);
 }
+
 .columns-container {
 	display:flex;
 	flex-direction:row;
@@ -226,6 +229,7 @@ body .main-contents {
   top: 20px;
   position: relative;
 }
+
 .columns-container ul {
 	padding: 0px;
 }
@@ -265,10 +269,7 @@ body .main-contents {
   border-bottom-width: thin;
   color: white;
   padding: 10px;
-
 }
-
-
 
 footer {
   display: flex;
@@ -320,21 +321,6 @@ ul {
   z-index: 1;
 }
 
-input[type=checkbox] {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
-}
-
-.thing {
-  display: none;
-  top: 0;
-  bottom: 0;
-  height: 100px;
-  width: 100px;
-  background-color: white;
-}
-
 .menu-overlay {
   height: 0px;
   opacity: 0;
@@ -351,8 +337,15 @@ input[type=checkbox] {
 
 }
 
-/* Toggled State */
-input[type=checkbox]:checked ~ .menu-overlay {
+/* The following two blocks are from: https://css-tricks.com/the-checkbox-hack/
+They implement the CSS checkbox hack */
+.check-menu {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+.check-menu:checked ~ .menu-overlay {
   padding: 0px;
   background: black;
   display: flex;
@@ -383,6 +376,10 @@ input[type=checkbox]:checked ~ .menu-overlay {
   cursor: pointer;
 }
 
+
+
+/* the following 1 line of code is from: http://cs52.me/assignments/hw1/
+it performs a media query to see if screen is below certain width */
 @media only screen and (max-width: 640px) {
   header .desktop-nav-bar {
     display: none;
@@ -419,7 +416,6 @@ input[type=checkbox]:checked ~ .menu-overlay {
     width: 100%;
   }
 
-
   .location-box {
     display: none;
   }
@@ -438,8 +434,115 @@ input[type=checkbox]:checked ~ .menu-overlay {
     flex-direction: column;
   }
 
-  .bottom-row p {
-    font-size: 12px;
+  .bottom-row {
+    position: relative;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  .bottom-row label {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Baloo Da';
+    font-weight: normal;
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+  .link-overlay-1 {
+    display: none;
+  }
+  /* The following two blocks are from: https://css-tricks.com/the-checkbox-hack/
+  They implement the CSS checkbox hack */
+  .check-link-1 {
+     position: absolute;
+     top: -9999px;
+     left: -9999px;
+  }
+
+
+  .check-link-1:checked ~ .link-overlay-1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 50vh;
+    z-index: 15;
+
+  }
+
+  .link-overlay-2 {
+    display: none;
+  }
+  /* The following two blocks are from: https://css-tricks.com/the-checkbox-hack/
+  They implement the CSS checkbox hack */
+  .check-link-2 {
+     position: absolute;
+     top: -9999px;
+     left: -9999px;
+  }
+
+
+  .check-link-2:checked ~ .link-overlay-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 50vh;
+    z-index: 15;
+  }
+
+  .link-overlay-3 {
+    display: none;
+  }
+  /* The following two blocks are from: https://css-tricks.com/the-checkbox-hack/
+  They implement the CSS checkbox hack */
+  .check-link-3 {
+     position: absolute;
+     top: -9999px;
+     left: -9999px;
+  }
+
+
+  .check-link-3:checked ~ .link-overlay-3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 50vh;
+    z-index: 15;
+
+  }
+
+  .link-overlay-4 {
+    display: none;
+  }
+  /* The following two blocks are from: https://css-tricks.com/the-checkbox-hack/
+  They implement the CSS checkbox hack */
+  .check-link-4 {
+     position: absolute;
+     top: -9999px;
+     left: -9999px;
+  }
+
+
+  .check-link-4:checked ~ .link-overlay-4 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 50vh;
+    z-index: 15;
   }
 
 
