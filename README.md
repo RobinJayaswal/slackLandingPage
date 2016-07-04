@@ -6,8 +6,8 @@ This project, Homework 1 of CS52, sought to make a static landing page resemblin
 ### Description
 I implemented the overall structure using almost exclusively flexboxes, and was able to recreate the structure of Slack's homepage.
 After styling it to my liking using pure CSS, I then added in screen size responsiveness with media query, creating one mobile version.
-Finally, I added in some responsiveness using the "CSS Checkbox Hack", allowing the user to open up the top level menu when the screen 
-was narrow, as well as expanding the link headers to show links, and added a nice transition to when the top level menu appeared.
+
+Finally, I implemented all 3 extra credit options. I added in some responsiveness using the "CSS Checkbox Hack", allowing the user to open up the top level menu when the screen was narrow, as well as expanding the link headers to show links, and added a nice transition to when the top level menu appeared.
 
 **What worked:** I found most things to work remarkably well.
 
@@ -33,6 +33,22 @@ start a billion dollar messaging app like Slack I'll have to use some javascript
 
 ### Layout Stage Screencaps
 
+![Alt text](/Screenshot/bareHTMLShot.png)
 
+
+### Cool Stuff Screenshots
+
+I implemented all three extra credit options.
+
+**No Screenshot Shown For the Transition. In mobile view, press "Menu" and you will see the menu come down from the top**
+
+
+#### Link Header Expanded in Mobile
+
+![Alt text](https://s31.postimg.org/53sou7wfv/Screen_Shot_2016_07_04_at_9_46_55_AM.png)
+
+#### Menu Expanded in Mobile
+
+![Alt text](https://s32.postimg.org/4x8c2tnd1/Screen_Shot_2016_07_04_at_9_45_34_AM.png)
 
 
