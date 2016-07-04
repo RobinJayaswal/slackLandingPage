@@ -249,9 +249,10 @@ body .main-contents {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.bottom-column a:hover {
+.bottom-contents a:hover {
   color: rgba(255, 255, 255, 0.9);
 }
+
 
 .rows-container {
   display: none;
@@ -296,7 +297,6 @@ p {
 a {
   font-family: 'Amiko', sans-serif;
   color: white;
-  cursor: pointer;
   text-decoration: none;
 }
 
@@ -445,8 +445,12 @@ it performs a media query to see if screen is below certain width */
     font-family: 'Baloo Da';
     font-weight: normal;
     margin-bottom: 0px;
+  }
+
+  .bottom-row label:hover {
     cursor: pointer;
   }
+
   .link-overlay-1 {
     display: none;
   }
@@ -531,7 +535,6 @@ it performs a media query to see if screen is below certain width */
      top: -9999px;
      left: -9999px;
   }
-
 
   .check-link-4:checked ~ .link-overlay-4 {
     display: flex;
